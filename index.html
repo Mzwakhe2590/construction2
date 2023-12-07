@@ -1,0 +1,99 @@
+<!DOCTYpe html>
+<html>
+	<head> 
+		<meta charset = "UTF-8">
+		<link = rel = "stylesheet" href="CSS/style.CSS">
+		<title>Construction website</title>
+		<style>
+			body {
+			  background-image: url('img/hel.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+			</style>
+	</head>
+<body>
+	<div class="filter">
+		<img src= "./img/const1.png" alt ="My picture" height="150px" width="100%">
+		
+        <nav class="nav">
+            <a href="active index.html">Home</a>
+           	<a href="About.html">About</a>
+           	<a href="Product.html">Product</a>
+           	<a href="Gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav><br>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="./img/s1.jpg" height= "550px" width= "100%">
+			  <div class="text"><h1>Angels Palace</h1></div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="./img/s01.jpg" height= "550px" width= "100%">
+			  <div class="text"><h1>San Marco</h1></div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="./img/s02.jpg" height= "550px" width= "100%">
+			  <div class="text"><h1>Aspen Hills</h1></div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			
+			<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+			
+	<br>
+	<br>
+	<footer>
+		<p><center>@Copyrights 2021<img src="./img/insta.png" class="face" <center>
+			<img src="./img/face.png" class="face"></p>
+	
+	</footer>
+       
+</div>	
+	</body>
+</html> 

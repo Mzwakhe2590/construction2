@@ -2,28 +2,36 @@
 <html>
 	<head> 
 		<meta charset = "UTF-8">
-		<link = rel = "stylesheet" href="CSS/style.CSS">
+		<link rel="stylesheet" href="CSS/style.css">
+		<script src="https://kit.fontawesome.com/4e90a8aec5.js" crossorigin="anonymous"></script>
 		<title>Construction website</title>
-		<style>
+		<!-- <style>
 			body {
 			  background-image: url('img/hel.jpg');
 			  background-repeat: no-repeat;
 			  background-attachment: fixed;
 			  background-size: cover;
 			}
-			</style>
+			</style> -->
 	</head>
 <body>
+
+	<header>
+		<img src= "./img/const1.png" alt ="My picture" class="hero__img">
+		<nav class="nav">
+			<a href="active index.html">Home</a>
+			   <a href="About.html">About</a>
+			   <a href="Product.html">Product</a>
+			   <a href="Gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+	</header>
+
 	<div class="filter">
-		<img src= "./img/const1.png" alt ="My picture" height="150px" width="100%">
+
 		
-        <nav class="nav">
-            <a href="active index.html">Home</a>
-           	<a href="About.html">About</a>
-           	<a href="Product.html">Product</a>
-           	<a href="Gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav><br>
+
 
 		<div class="slideshow-container">
 
@@ -48,10 +56,9 @@
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			
-			</div>
-			<br>
+		</div>
 			
-			<div style="text-align:center">
+			<div class="dots">
 			  <span class="dot" onclick="currentSlide(1)"></span> 
 			  <span class="dot" onclick="currentSlide(2)"></span> 
 			  <span class="dot" onclick="currentSlide(3)"></span> 
@@ -86,13 +93,11 @@
 			}
 			</script>
 			
-	<br>
-	<br>
-	<footer>
-		<p><center>@Copyrights 2021<img src="./img/insta.png" class="face" <center>
-			<img src="./img/face.png" class="face"></p>
-	
-	</footer>
+
+			<footer>
+			Copyright 2021 <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-square-x-twitter"></i>
+			</footer>
+
        
 </div>	
 	</body>

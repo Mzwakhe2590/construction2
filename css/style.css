@@ -1,29 +1,46 @@
-.nav{
-    background:rgb(223, 204, 143);
 
-    width:99%;
-    height: 22px;
-    margin:-1px;
-    text-align:center;
-    font: size 40px;
-    padding:8px;
-    border: solid;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero__img {
+  width: 100%;
+}
+
+.filter {
+  text-align: center;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    background:rgb(223, 204, 143);
+    text-align: center;
+    font-size: 30px;
+    padding-block: 20px;
 }
 .nav a{
   color: white;
-  padding:50px;
   text-decoration: none;
 }
+
+
 body {
-  background-image: url('img/hel.jpg');
+  height: 100vh;
+  background:rgb(223, 204, 143);
+  /* background-image: url('img/hel.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
 }
 .filter{
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  /* background-color: rgba(0,0,0,0.5); */
 }
 a:active{
   color: black;
@@ -38,19 +55,24 @@ a:hover{
     border-left: solid;
     border-right: solid;*/
 }
-.one{
-  width: 90%;
-  height: 270px;
-  margin-left: 5%;
+.one {
+  text-align: center;
 }
+
+.one img {
+  margin-block: 2rem;
+  width: 50%;
+}
+
+
 .two{
   width: 50%;
 }
-body{
+/* body{
     background-color: burlywood;
     margin:0;
     padding:0;
-}
+} */
 #me22{
 	transition: width 1s;
 }
@@ -96,9 +118,8 @@ body{
     border-collapse: collapse;
   }
   .pan{
-    background:blu(175, 153, 140);
-    width:100%;
-    height:500px;
+    display: grid;
+    gap: 2rem;
   }
   .wan{
     background:rgb(223, 204, 143);
@@ -116,14 +137,16 @@ body{
     font-size:20px;
     padding-top:2%;
   }
+
+  .stan img {
+    margin-block: 3rem;
+    width: 50%;
+  }
   .stan{
     width: 90%;
     margin-left: 5%;
   }
-  body{
-    padding:0;
-    margin:0;
-  }
+
   .slider-frame{
     overflow: hidden;
     height:800px;
@@ -232,17 +255,18 @@ form{
 }
 
 .header-div{
+  margin-top: 3rem;
   text-align: center
 }
 
-.map-details{
+/* .map-details{
   width: 45%;
   float: left;
   background-color: rgb(223, 204, 143);
   opacity:1;
   margin-left: 3.3%;
   padding-bottom: 32px;
-}
+} */
 
 
 .contact-sub-header {
@@ -284,10 +308,7 @@ form{
 .address-paragraph {
   margin-bottom: -10px;
 }
-body{
-margin: 0;
-padding: 0;
-}
+
 .slidershow{
   width:700px;
   height: 400px;
@@ -323,9 +344,9 @@ input[name="r"]{
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   position: relative;
-  margin: auto;
+  margin-block-start: 1.5rem;
 }
 
 /* Next & previous buttons */
@@ -492,3 +513,37 @@ input[name="r"]{
   height: 700px;
   margin:  auto;
 }
+
+.dots {
+  margin-block: 4rem;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -35rem;
+  right: 35rem;
+}
+
+.footer {
+  bottom: -130rem;
+
+}
+
+.footer_about {
+  bottom: -110rem;
+}
+
+footer i {
+  font-size: 3rem;
+  margin-inline: 1.5rem;
+}
+
+
+table {
+  margin-inline: auto;
+}
+
